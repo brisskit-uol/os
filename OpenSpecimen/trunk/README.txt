@@ -21,7 +21,7 @@ workflow records.  Therefore, if using a backup from the
 live database you will need do the following process.
 
 1. Log onto mysql using `mysql -u lampuser -p`
-2. Swicth the correct database using `use {database name}`
+2. Switch the correct database using `use {database name}`
 3. Run the following command:
 {{{
 update os_cp_workflows set workflows = '[{"name":"registerParticipant","view":"plugin-ui-resources/le/collect-specimens.html","ctrl":"leRegAndCollectSpecimensCtrl","data":{"boxOpts":{"dimension":{"rows":8,"columns":12},"compact":false}}}]';
