@@ -2,15 +2,15 @@
 
 == Install process
 
-1, Log onto the appropriate LAMP server.
+1. Log onto the appropriate LAMP server.
 2. `cd /local`
 3. Download Zip file `openSpecimen_v2_4.zip`
 4. Unzip the release: `unzip openSpecimen_v2_4.zip`
 5. `cd openSpecimen_v2_4`
 6. Run the command `./install.sh`
-7. `sudo -u wwwrun ./first_run_open_specimen.sh`
+7. `./first_run_open_specimen.sh`
 8. `Check for process still running ps -ef|grep cat`
-9. If the process is still running, kill it using `sudo -u wwwrun kill {process id}`
+9. If the process is still running, kill it using `kill {process id}`
 10. `sudo -u wwwrun ./run_open_specimen.sh`
 11. Check it starts by running `tail -f app/logs/catalina.out`
 
