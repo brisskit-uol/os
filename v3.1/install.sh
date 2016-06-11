@@ -2,7 +2,7 @@
 
 OPEN_SPECIMEN_DIR=/local/openSpecimen_v3_1
 
-mv openspecimen_v3_1 $OPEN_SPECIMEN_DIR
+cp -R openspecimen_v3_1 $OPEN_SPECIMEN_DIR/openspecimen_v3_1
 
 setfacl -m u:wwwrun:rx $OPEN_SPECIMEN_DIR/first_run_open_specimen.sh
 setfacl -m u:wwwrun:rx $OPEN_SPECIMEN_DIR/run_open_specimen.sh
