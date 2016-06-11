@@ -13,6 +13,8 @@ setfacl -R -m u:wwwrun:rwx $OPEN_SPECIMEN_DIR/app/webapps/
 setfacl -R -m u:wwwrun:rwx $OPEN_SPECIMEN_DIR/app/plugins/
 setfacl -R -m u:wwwrun:rwx $OPEN_SPECIMEN_DIR/app/osdata
 
+grep -rl {{apphost-port}} $OPEN_SPECIMEN_DIR/app/ | xargs sed -i s/{{apphost-port}}/8280/g
+
 chmod 774 $OPEN_SPECIMEN_DIR/app/bin/catalina.sh
 chmod 774 $OPEN_SPECIMEN_DIR/app/bin/shutdown.sh
 setfacl -m u:wwwrun:rx $OPEN_SPECIMEN_DIR/app/bin/catalina.sh
