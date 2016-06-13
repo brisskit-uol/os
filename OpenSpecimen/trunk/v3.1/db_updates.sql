@@ -11,6 +11,7 @@ DROP TABLE  scg_extn_records_view;
 DROP TABLE  specimen_extn_records_view;
 
 ALTER TABLE catissue_auth_domains DROP FOREIGN KEY FK_provider_ID;
+ALTER TABLE catissue_permissible_value DROP FOREIGN KEY FK57DDCE1FC56C2B1;
 
 alter table CATISSUE_USER convert to character set utf8 collate utf8_general_ci;
 alter table association convert to character set utf8 collate utf8_general_ci;
@@ -443,4 +444,5 @@ alter table query_to_output_terms convert to character set utf8 collate utf8_gen
 alter table query_to_parameters convert to character set utf8 collate utf8_general_ci;
 
 ALTER TABLE catissue_auth_domains ADD CONSTRAINT FK_provider_ID FOREIGN KEY (AUTH_TYPE) REFERENCES catissue_auth_providers(AUTH_TYPE);
+ALTER TABLE catissue_permissible_value ADD CONSTRAINT FK57DDCE1FC56C2B1 FOREIGN KEY (PUBLIC_ID) REFERENCES catissue_cde(PUBLIC_ID);
 
