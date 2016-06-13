@@ -10,6 +10,8 @@ DROP TABLE  rbac_subject_access_view;
 DROP TABLE  scg_extn_records_view;
 DROP TABLE  specimen_extn_records_view;
 
+ALTER TABLE catissue_auth_domains DROP FOREIGN KEY FK_provider_ID;
+
 alter table CATISSUE_USER convert to character set utf8 collate utf8_general_ci;
 alter table association convert to character set utf8 collate utf8_general_ci;
 alter table cat_stor_cont_spec_types convert to character set utf8 collate utf8_general_ci;
@@ -439,3 +441,6 @@ alter table query_rule_cond convert to character set utf8 collate utf8_general_c
 alter table query_subexpr_operand convert to character set utf8 collate utf8_general_ci;
 alter table query_to_output_terms convert to character set utf8 collate utf8_general_ci;
 alter table query_to_parameters convert to character set utf8 collate utf8_general_ci;
+
+ALTER TABLE catissue_auth_domains ADD CONSTRAINT FK_provider_ID FOREIGN KEY (AUTH_TYPE) REFERENCES catissue_auth_providers(AUTH_TYPE);
+
