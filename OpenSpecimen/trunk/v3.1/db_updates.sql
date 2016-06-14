@@ -10,7 +10,7 @@ DROP TABLE  rbac_subject_access_view;
 DROP TABLE  scg_extn_records_view;
 DROP TABLE  specimen_extn_records_view;
 
---SET FOREIGN_KEY_CHECKS=0;
+#SET FOREIGN_KEY_CHECKS=0;
 
 ALTER TABLE catissue_auth_domains DROP FOREIGN KEY FK_provider_ID;
 ALTER TABLE catissue_permissible_value DROP FOREIGN KEY FK57DDCE1FC56C2B1;
@@ -474,4 +474,4 @@ CREATE VIEW cpr_view AS
 ;
 
 
---SET FOREIGN_KEY_CHECKS=1;
+#SET FOREIGN_KEY_CHECKS=1;
