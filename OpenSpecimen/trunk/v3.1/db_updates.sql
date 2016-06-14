@@ -10,6 +10,8 @@ DROP TABLE  rbac_subject_access_view;
 DROP TABLE  scg_extn_records_view;
 DROP TABLE  specimen_extn_records_view;
 
+--SET FOREIGN_KEY_CHECKS=0;
+
 ALTER TABLE catissue_auth_domains DROP FOREIGN KEY FK_provider_ID;
 ALTER TABLE catissue_permissible_value DROP FOREIGN KEY FK57DDCE1FC56C2B1;
 
@@ -446,3 +448,30 @@ alter table query_to_parameters convert to character set utf8 collate utf8_gener
 ALTER TABLE catissue_auth_domains ADD CONSTRAINT FK_provider_ID FOREIGN KEY (AUTH_TYPE) REFERENCES catissue_auth_providers(AUTH_TYPE);
 ALTER TABLE catissue_permissible_value ADD CONSTRAINT FK57DDCE1FC56C2B1 FOREIGN KEY (PUBLIC_ID) REFERENCES catissue_cde(PUBLIC_ID);
 
+CREATE VIEW cpr_view AS
+	select 
+		  `cpr`.`IDENTIFIER` AS `CPR_ID`
+		, `cpr`.`COLLECTION_PROTOCOL_ID` AS `CP_ID`
+		, `cpr`.`PARTICIPANT_ID` AS `PARTICIPANT_ID`
+		, `p`.`FIRST_NAME` AS `FIRST_NAME`
+		, `p`.`MIDDLE_NAME` AS `MIDDLE_NAME`
+		, `p`.`LAST_NAME` AS `LAST_NAME`
+		, `p`.`BIRTH_DATE` AS `DOB`
+		, `p`.`SOCIAL_SECURITY_NUMBER` AS `SSN`
+		, `cpr`.`ACTIVITY_STATUS` AS `ACTIVITY_STATUS`
+		, `p`.`GENDER` AS `GENDER`
+		, `p`.`GENOTYPE` AS `GENOTYPE`
+		, `cpr`.`REGISTRATION_DATE` AS `REGISTRATION_DATE`
+		, `cpr`.`PROTOCOL_PARTICIPANT_ID` AS `PPID`
+		, `p`.`VITAL_STATUS` AS `VITAL_STATUS`
+		, `p`.`DEATH_DATE` AS `DEATH_DATE`
+		, `p`.`ETHNICITY` AS `ETHNICITY`
+		, `cpr`.`BARCODE` AS `BARCODE`
+		, `cpr`.`CONSENT_SIGN_DATE` AS `CONSENT_SIGN_DATE`
+		, `cpr`.`CONSENT_WITNESS` AS `CONSENT_WITNESS`
+		, `cpr`.`CONSENT_DOC_URL` AS `CONSENT_DOC_URL`
+	 from (`catissue_coll_prot_reg` `cpr` join `catissue_participant` `p` on((`cpr`.`PARTICIPANT_ID` = `p`.`IDENTIFIER`)))
+;
+
+
+--SET FOREIGN_KEY_CHECKS=1;
