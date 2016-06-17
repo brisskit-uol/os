@@ -1,5 +1,9 @@
 = Open Specimen Install
 
+== Clean Process
+
+1. In this directory run `./clean.sh`
+
 == Build Process
 
 1. In this directory run `./build.sh`
