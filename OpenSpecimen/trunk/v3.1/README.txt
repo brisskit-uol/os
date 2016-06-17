@@ -1,5 +1,9 @@
 = Open Specimen Install
 
+== Build Process
+
+1. In this directory run `./build.sh`
+
 == Install process
 
 1. Log onto the appropriate LAMP server.
