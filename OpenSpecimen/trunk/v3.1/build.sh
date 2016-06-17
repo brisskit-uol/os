@@ -13,4 +13,5 @@ bower install
 cd ..
 gradle build
 
+cd ..
 cp build/openspecimen-3.1.1/build/libs/openspecimen.war deploy/app/webapps/
