@@ -21,3 +21,9 @@
 9. If the process is still running, kill it using `kill {process id}`
 10. `sudo -u wwwrun /local/openspecimen_v3_1/run_open_specimen.sh`
 11. Check it starts by running `tail -f /local/openspecimen_v3_1/app/logs/catalina.out`
+
+== Create a database from scratch use
+
+{{{
+CREATE DATABASE openspecimen CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+}}}
