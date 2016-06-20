@@ -1,14 +1,16 @@
 #!/usr/bin/env bash
 
+OS_VERSION='3.1.2.RC1'
+
 rm deploy/app/webapps/openspecimen.war
 
 cd build
-unzip openspecimen-3.1.1.zip
+unzip openspecimen-$OS_VERSION.zip
 
 cd ..
-cp build.properties build/openspecimen-3.1.1
+cp build.properties build/openspecimen-$OS_VERSION
 
-cd build/openspecimen-3.1.1/www
+cd build/openspecimen-$OS_VERSION/www
 npm install
 bower install
 
@@ -16,6 +18,6 @@ cd ..
 gradle build
 
 cd ../..
-cp build/openspecimen-3.1.1/build/libs/openspecimen.war deploy/app/webapps/
+cp build/openspecimen-$OS_VERSION/build/libs/openspecimen.war deploy/app/webapps/
 
-rm -fR build/openspecimen-3.1.1
+rm -fR build/openspecimen-$OS_VERSION
