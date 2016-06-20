@@ -4,7 +4,6 @@ OPEN_SPECIMEN_DIR=/local/openSpecimen_v3_1
 
 cp -R deploy $OPEN_SPECIMEN_DIR
 
-setfacl -m u:wwwrun:rx $OPEN_SPECIMEN_DIR/first_run_open_specimen.sh
 setfacl -m u:wwwrun:rx $OPEN_SPECIMEN_DIR/run_open_specimen.sh
 setfacl -m u:wwwrun:rx $OPEN_SPECIMEN_DIR/stop_open_specimen.sh
 setfacl -R -m u:wwwrun:rwx $OPEN_SPECIMEN_DIR/app/logs/
