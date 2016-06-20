@@ -12,7 +12,7 @@
 
 1. Log onto the appropriate LAMP server.
 2. `cd /local`
-3. Download this repository using the command `svn co https://svn.rcs.le.ac.uk/LCBRU/utilities/OpenSpecimen/trunk/v3.1/`
+3. Download this repository using the command `svn co https://svn.rcs.le.ac.uk/LCBRU/utilities/OpenSpecimen/trunk/v3.0/`
 4. `cd v3.0`
 5. Backup the database.
 6. Update the database for compatability using the command `mysql -u {username} -p < db_update.sql {database_name}`
