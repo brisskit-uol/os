@@ -27,3 +27,7 @@
 {{{
 CREATE DATABASE openspecimen CHARACTER SET utf8 COLLATE utf8_general_ci;
 }}}
+
+== Create a default user
+
+1. Run the command `mysql -u {username} -p < db_createDefaultUser.sql {database_name}`
