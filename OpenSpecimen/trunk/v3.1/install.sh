@@ -10,7 +10,7 @@ fi
 OPEN_SPECIMEN_DIR=/local/openSpecimen
 OPEN_SPECIMEN_OLD_DIR=/local/openSpecimen_old
 
-if [ -d "$DIRECTORY" ]; then
+if [ -d "$OPEN_SPECIMEN_DIR" ]; then
 	echo "Existing OpenSpecimen folder $OPEN_SPECIMEN_DIR moved to saved directory $OPEN_SPECIMEN_OLD_DIR"
 	rm -fR $OPEN_SPECIMEN_OLD_DIR
 	mv $OPEN_SPECIMEN_DIR $OPEN_SPECIMEN_OLD_DIR
