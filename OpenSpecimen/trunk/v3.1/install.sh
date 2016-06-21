@@ -1,5 +1,12 @@
 #!/usr/bin/env bash
 
+JAVA_PROCESS_ID=`pgrep java`
+
+if [ "${JAVA_PROCESS_ID:-null}" != null ]; then
+    echo "Cannot upgrade because java process is still running"
+    exit 1
+fi
+
 OPEN_SPECIMEN_DIR=/local/openSpecimen
 
 cp -R deploy $OPEN_SPECIMEN_DIR
