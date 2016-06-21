@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-OPEN_SPECIMEN_DIR=/local/openSpecimen_v3_1
+OPEN_SPECIMEN_DIR=/local/openSpecimen
 
 cp -R deploy $OPEN_SPECIMEN_DIR
 

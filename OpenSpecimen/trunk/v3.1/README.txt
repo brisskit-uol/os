@@ -20,7 +20,7 @@
 8. `Check for process still running ps -ef|grep cat`
 9. If the process is still running, kill it using `kill {process id}`
 10. `sudo -u wwwrun /local/openspecimen_v3_1/run_open_specimen.sh`
-11. Check it starts by running `tail -f /local/openspecimen_v3_1/app/logs/catalina.out`
+11. Check it starts by running `tail -f /local/openspecimen/app/logs/catalina.out`
 
 == Create a database from scratch use
 
