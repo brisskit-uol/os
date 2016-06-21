@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-OS_VERSION='3.1.2.RC1'
+OS_VERSION='3.1.1.LCBRU'
 
 rm deploy/app/webapps/openspecimen.war
 
