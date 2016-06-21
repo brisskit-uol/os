@@ -8,7 +8,7 @@ cd build
 unzip openspecimen-$OS_VERSION.zip
 
 cd ..
-cp build.properties build/openspecimen-$OS_VERSION
+cp build.properties.fresh build/openspecimen-$OS_VERSION/build.properties
 
 cd build/openspecimen-$OS_VERSION/www
 npm install
