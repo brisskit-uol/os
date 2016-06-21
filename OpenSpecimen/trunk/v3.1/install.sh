@@ -3,7 +3,7 @@
 JAVA_PROCESS_ID=`pgrep java`
 
 if [ "${JAVA_PROCESS_ID:-null}" != null ]; then
-    echo "Cannot upgrade because java process is still running"
+    echo "Cannot upgrade because java process is still running.  Process ID = $JAVA_PROCESS_ID"
     exit 1
 fi
 
