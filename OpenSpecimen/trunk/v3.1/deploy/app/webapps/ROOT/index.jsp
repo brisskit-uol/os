@@ -15,7 +15,6 @@ See the License for the specific language governing permissions and
 limitations under the License.
 --%>
 <!DOCTYPE html>
-<meta http-equiv="refresh" content="0;url=/openspecimen/"/>
 <%@ page session="false" %>
 <%
 java.text.SimpleDateFormat sdf = new java.text.SimpleDateFormat("yyyy");
