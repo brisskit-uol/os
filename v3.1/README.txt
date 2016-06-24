@@ -31,3 +31,21 @@ CREATE DATABASE openspecimen CHARACTER SET utf8 COLLATE utf8_general_ci;
 == Create a default user
 
 1. Run the command `mysql -u {username} -p < db_createDefaultUser.sql {database_name}`
+
+== Apache Settings
+
+Add the following to the http.cong:
+{{{
+
+# Redirect if case is incorrect
+RedirectMatch 301 (?i)/openspecimen /openspecimen/
+
+# redirect from root
+Redirect / /openspecimen
+
+# Proxy to provide access to the JBoss Application Server
+ ProxyPass /openspecimen http://localhost:8280/openspecimen timeout=180
+ ProxyPassReverse /openspecimen http://localhost:8280/openspecimen
+ ProxyTimeout 180
+
+}}}
