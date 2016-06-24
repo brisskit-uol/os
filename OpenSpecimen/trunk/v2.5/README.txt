@@ -1,5 +1,7 @@
 = Open Specimen Install
 
+= DO NOT USE - THIS BUILD IS BROKEN
+
 == Clean Process
 
 1. In this directory run `./clean.sh`
