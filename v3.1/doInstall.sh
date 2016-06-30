@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-if [ "$1" -ne "fresh" && "$1" -ne "upgrade" ]; then
+if [ "$1" -ne "fresh" ] && [ "$1" -ne "upgrade" ]; then
     echo "doInstall must have a parameter of either \"fresh\" or \"upgrade\""
     exit 1
 fi
