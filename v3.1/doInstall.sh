@@ -23,7 +23,7 @@ fi
 
 cp -R deploy $OPEN_SPECIMEN_DIR
 
-cp $OPEN_SPECIMEN_OLD_DIR/builds/openspecimen-$1.war /$OPEN_SPECIMEN_OLD_DIR/app/webapps/openspecimen.war
+cp $OPEN_SPECIMEN_DIR/builds/openspecimen-$1.war $OPEN_SPECIMEN_DIR/app/webapps/openspecimen.war
 
 setfacl -m u:wwwrun:rx $OPEN_SPECIMEN_DIR/run_open_specimen.sh
 setfacl -m u:wwwrun:rx $OPEN_SPECIMEN_DIR/stop_open_specimen.sh
