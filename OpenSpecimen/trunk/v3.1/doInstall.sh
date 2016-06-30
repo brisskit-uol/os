@@ -24,7 +24,9 @@ fi
 cp -R deploy $OPEN_SPECIMEN_DIR
 
 cp $OPEN_SPECIMEN_DIR/builds/openspecimen-$1.war $OPEN_SPECIMEN_DIR/app/webapps/openspecimen.war
+touch $OPEN_SPECIMEN_DIR/openspecimen.log
 
+setfacl -m u:wwwrun:rw $OPEN_SPECIMEN_DIR/openspecimen.log
 setfacl -m u:wwwrun:rx $OPEN_SPECIMEN_DIR/run_open_specimen.sh
 setfacl -m u:wwwrun:rx $OPEN_SPECIMEN_DIR/stop_open_specimen.sh
 setfacl -R -m u:wwwrun:rwx $OPEN_SPECIMEN_DIR/app/logs/
