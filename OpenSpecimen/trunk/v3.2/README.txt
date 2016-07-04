@@ -1,26 +1,27 @@
 = Open Specimen Install
 
-== Clean Process
+*################# DO NOT USE YET - LE PLUGIN DOES NOT COMPILE ########################*
 
-1. In this directory run `./clean.sh`
+== Get Source
+
+1. In this directory run `./doGet.sh`
 
 == Build Process
 
-1. In this directory run `./build.sh`
+1. In this directory run `./doBuild.sh`
 
 == Install process
 
 1. Log onto the appropriate LAMP server.
 2. `cd /local`
-3. Download this repository using the command `svn co https://svn.rcs.le.ac.uk/LCBRU/utilities/OpenSpecimen/trunk/v3.1/`
-4. `cd v3.1`
+3. Download this repository using the command `svn co https://svn.rcs.le.ac.uk/LCBRU/utilities/OpenSpecimen/trunk/v3.2/`
+4. `cd v3.2`
 5. Backup the database.
-6. Update the database for compatability using the command `mysql -u {username} -p < db_update.sql {database_name}`
-7. Run the command `./install.sh`
-8. `Check for process still running ps -ef|grep cat`
-9. If the process is still running, kill it using `kill {process id}`
-10. `sudo -u wwwrun /local/openspecimen_v3_1/run_open_specimen.sh`
-11. Check it starts by running `tail -f /local/openspecimen/app/logs/catalina.out`
+6. Run the command `./doInstall.sh`
+7. If the process is still running, kill it using `sudo -u wwwrun kill {process id}`
+8. `sudo -u wwwrun /local/openspecimen/run_open_specimen.sh`
+9. Check it starts by running `tail -f /local/openspecimen/app/logs/catalina.out`
+10. Check for errors by running `tail -f /local/openspecimen/openspecimen.log`
 
 == Create a database from scratch use
 
