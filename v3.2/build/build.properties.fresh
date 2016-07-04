@@ -1,0 +1,11 @@
+app_home = /local/openSpecimen/app
+app_home = /local/openSpecimen/app
+app_data_dir = /local/openSpecimen/app/osdata
+datasource_jndi = java:/comp/env/jdbc/openspecimen
+deployment_type = fresh
+
+database_type = mysql
+
+show_sql = false
+
+plugin_dir = /local/openSpecimen/app/plugins
