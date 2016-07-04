@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-OS_VERSION='3.1.1.LCBRU'
+OS_VERSION='3.1.1'
 
 function buildOpenSpecimen {
     rm deploy/builds/openspecimen-$1.war
