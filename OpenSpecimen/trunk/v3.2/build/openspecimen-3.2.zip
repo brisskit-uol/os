@@ -56,7 +56,7 @@
 <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
     <meta name="google-analytics" content="UA-3769691-2">
 
-<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="8FD2F854:1E0B:8DB2F67:577A41A4" name="octolytics-dimension-request_id" />
+<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="8FD2F854:1E0A:A885D93:577A429C" name="octolytics-dimension-request_id" />
 <meta content="/&lt;user-name&gt;/&lt;repo-name&gt;/releases/show" data-pjax-transient="true" name="analytics-location" />
 
 
@@ -69,14 +69,14 @@
     <meta name="user-login" content="">
 
         <meta name="expected-hostname" content="github.com">
-      <meta name="js-proxy-site-detection-payload" content="N2VjZThmNTNmMTU4NmRiNDFhMDI5YjMxMTczMTExYTZkNWU3NjcyOWMyZjAwYzdiMWRkNTliY2Y5NWNjOTE1NXx7InJlbW90ZV9hZGRyZXNzIjoiMTQzLjIxMC4yNDguODQiLCJyZXF1ZXN0X2lkIjoiOEZEMkY4NTQ6MUUwQjo4REIyRjY3OjU3N0E0MUE0IiwidGltZXN0YW1wIjoxNDY3NjI5OTg4fQ==">
+      <meta name="js-proxy-site-detection-payload" content="ZjUyMTgzMzZjNmEwNzgxODY3OTNhY2Y2NDRkZGM5MDY4NjIxMzhiNTUzZTgxOGJmZTVjM2YyODczMWQ1ZjVmZXx7InJlbW90ZV9hZGRyZXNzIjoiMTQzLjIxMC4yNDguODQiLCJyZXF1ZXN0X2lkIjoiOEZEMkY4NTQ6MUUwQTpBODg1RDkzOjU3N0E0MjlDIiwidGltZXN0YW1wIjoxNDY3NjMwMjM2fQ==">
 
 
       <link rel="mask-icon" href="https://assets-cdn.github.com/pinned-octocat.svg" color="#4078c0">
       <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
 
-    <meta name="html-safe-nonce" content="24db2b3261df586b732420aa0fe4bcad194977a3">
-    <meta content="f656f82b7611970453afb69a5dcf041b20c46bfe" name="form-nonce" />
+    <meta name="html-safe-nonce" content="89dce5580397ba10ea0b0a0528e004611186d472">
+    <meta content="928f5e7532c3485a32f02c1dcf42a3e5c711be5f" name="form-nonce" />
 
     <meta http-equiv="x-pjax-version" content="7ca106dd8d4396d47796a4f7b714d8c7">
     
@@ -380,7 +380,7 @@
       <svg aria-hidden="true" class="octicon octicon-mark-github" height="24" version="1.1" viewBox="0 0 16 16" width="24"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
 </a>
     <ul class="site-footer-links">
-      <li>&copy; 2016 <span title="0.06339s from github-fe141-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+      <li>&copy; 2016 <span title="0.05008s from github-fe149-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
         <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
         <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
         <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
