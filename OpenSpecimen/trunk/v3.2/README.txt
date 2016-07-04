@@ -14,7 +14,7 @@
 
 1. Log onto the appropriate LAMP server.
 2. `cd /local`
-3. Download this repository using the command `svn co https://svn.rcs.le.ac.uk/LCBRU/utilities/OpenSpecimen/trunk/v3.2/`
+3. Download this repository using the command `svn export https://svn.rcs.le.ac.uk/LCBRU/utilities/OpenSpecimen/trunk/v3.2/`
 4. `cd v3.2`
 5. Backup the database.
 6. Run the command `./doInstall.sh`
