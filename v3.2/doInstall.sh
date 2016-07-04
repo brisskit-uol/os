@@ -24,6 +24,7 @@ fi
 cp -R deploy $OPEN_SPECIMEN_DIR
 
 cp $OPEN_SPECIMEN_DIR/builds/openspecimen-$1.war $OPEN_SPECIMEN_DIR/app/webapps/openspecimen.war
+cp $OPEN_SPECIMEN_DIR/builds/os-le-1.0.0.jar $OPEN_SPECIMEN_DIR/app/plugins
 touch $OPEN_SPECIMEN_DIR/openspecimen.log
 
 setfacl -m u:wwwrun:rw $OPEN_SPECIMEN_DIR/openspecimen.log
