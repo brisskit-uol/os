@@ -21,7 +21,7 @@ function buildOpenSpecimen {
 	cd ../..
 	cp build/openspecimen-$OS_VERSION/build/libs/openspecimen.war deploy/builds/openspecimen-$1.war
 
-	rm -fR build/openspecimen-$OS_VERSION	
+	rm -fR build/openspecimen-$OS_VERSION
 }
 
 buildOpenSpecimen 'fresh'
