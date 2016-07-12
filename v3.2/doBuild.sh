@@ -41,5 +41,6 @@ function buildOpenSpecimen {
 	rm -fR build/openspecimen-$OS_VERSION
 }
 
+buildLeicesterPlugin
 buildOpenSpecimen 'fresh'
 buildOpenSpecimen 'upgrade'
