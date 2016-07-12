@@ -2,12 +2,12 @@
 
 OS_VERSION='3.2'
 
-function buildOpenSpecimen {
+function buildLeicesterPlugin {
 	cd build
 
-	unzip le_plugin.zip
+	unzip openspecimen_extensions.zip
 
-	cd le_plugin/src/main/webapp
+	cd openspecimen_extensions/le/src/main/webapp
 	npm install
 
 	cd ../../../
@@ -17,7 +17,7 @@ function buildOpenSpecimen {
 
 	cp build/openspecimen_extensions/le/build/libs/os-le-1.0.0.jar deploy/builds/
 
-	rm -fR build/le_plugin
+	rm -fR build/openspecimen_extensions
 }
 
 function buildOpenSpecimen {
