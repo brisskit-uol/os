@@ -12,6 +12,9 @@
     </addColumn>
   </changeSet>
 
+<!--
+  RaB 2016-06-21: Removed to fix upgrade
+  
   <changeSet author="ckhilosiya" id="Track whether freeze/thaw cycle of specimen was incremented when frozen event was created">
     <addColumn tableName="CATISSUE_FROZEN_EVENT_PARAM">
       <column name="INCREMENT_FREEZE_THAW" type="${boolean.type}" defaultValueBoolean="false"/>
@@ -23,6 +26,7 @@
       <column name="INCREMENT_FREEZE_THAW" type="${boolean.type}" defaultValueBoolean="false"/>
     </addColumn>
   </changeSet>
+-->
 
   <changeSet author="ckhilosiya" id="Add return specimens fields to order items table">
     <addColumn tableName="OS_ORDER_ITEMS">

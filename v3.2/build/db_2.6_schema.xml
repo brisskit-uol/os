@@ -132,7 +132,11 @@
       //     
     </sql>
 
+<!--
+  RaB 2016-06-21: Removed to fix upgrade
+  
     <dropTable tableName="CATISSUE_DISTRI_EVENT_PARAM"/>
+-->
   </changeSet>
 
   <changeSet author="slakhani" id="Table to track OpenSpecimen upgrades">
