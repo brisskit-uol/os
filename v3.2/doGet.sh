@@ -15,6 +15,8 @@ cp db_3.1_schema.xml openspecimen-$OS_VERSION.LCBRU/WEB-INF/resources/db/3.1/sch
 
 zip -r openspecimen-$OS_VERSION.LCBRU.zip openspecimen-$OS_VERSION.LCBRU
 
+rm -fR openspecimen-$OS_VERSION.LCBRU
+
 # Get OpenSpecimen Plugins
 svn export https://github.com/krishagni/os-extensions.git/trunk/ openspecimen_extensions
 
