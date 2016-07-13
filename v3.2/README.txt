@@ -1,7 +1,5 @@
 = Open Specimen Install
 
-*################# DO NOT USE YET - LE PLUGIN DOES NOT COMPILE ########################*
-
 == Get Source
 
 1. In this directory run `./doGet.sh`
