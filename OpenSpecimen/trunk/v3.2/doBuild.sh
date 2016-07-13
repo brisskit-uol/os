@@ -26,7 +26,7 @@ function buildOpenSpecimen {
 	cd build
 	unzip openspecimen-$OS_VERSION.zip
 
-	cp build.properties.$1 build/openspecimen-$OS_VERSION/build.properties
+	cp build.properties.$1 openspecimen-$OS_VERSION/build.properties
 
 	cd openspecimen-$OS_VERSION/www
 	npm install
