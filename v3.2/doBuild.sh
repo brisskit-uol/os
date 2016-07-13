@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-OS_VERSION='3.2'
+OS_VERSION='3.2.LCBRU'
 
 function buildLeicesterPlugin {
 	cd build
