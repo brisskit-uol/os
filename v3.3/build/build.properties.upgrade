@@ -1,0 +1,13 @@
+app_home = /local/openSpecimen/app
+app_home = /local/openSpecimen/app
+app_data_dir = /local/openSpecimen/app/osdata
+app_log_conf = /local/openSpecimen/app/conf/logging.properties
+datasource_jndi = java:/comp/env/jdbc/openspecimen
+deployment_type = upgrade
+
+database_type = mysql
+datasource_dialect = org.hibernate.dialect.MySQLDialect
+
+show_sql = false
+
+plugin_dir = /local/openSpecimen/app/plugins
