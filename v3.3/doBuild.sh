@@ -33,7 +33,7 @@ function buildOpenSpecimen {
 	bower install
 
 	cd ..
-	gradle build
+	gradle -Penv=prod build
 
 	cd ../..
 	cp build/openspecimen-$OS_VERSION/build/libs/openspecimen.war deploy/builds/openspecimen-$1.war
