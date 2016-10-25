@@ -4,6 +4,7 @@ app_data_dir = /local/openSpecimen/app/osdata
 app_log_conf = /local/openSpecimen/app/conf/logging.properties
 datasource_jndi = java:/comp/env/jdbc/openspecimen
 deployment_type = upgrade
+env = prod
 
 database_type = mysql
 datasource_dialect = org.hibernate.dialect.MySQLDialect
