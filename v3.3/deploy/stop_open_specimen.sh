@@ -10,8 +10,7 @@ JAVA_HOME=/opt/java
 JRE_HOME=/opt/java/jre
 OPEN_SPECIMEN_DIR=/local/openSpecimen/app
 
-export JAVA_TOOL_OPTIONS=-XX:CompressedClassSpaceSize=10m
-export JAVA_OPTS="-Xmx2G -XX:-UseCompressedClassPointers"
+export JAVA_OPTS="-Xmx2G -XX:-UseCompressedClassPointers -XX:CompressedClassSpaceSize=1g"
 
 $OPEN_SPECIMEN_DIR/bin/shutdown.sh
 
